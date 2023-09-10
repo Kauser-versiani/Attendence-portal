@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Sheet</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Present</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-09-10</td>
+                    <td>John Doe</td>
+                    <td><input type="checkbox" class="attendance-checkbox"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h1>Teacher Profiles</h1>
+        <div class="teacher-list">
+            <div class="teacher-card" onclick="showProfile(0)">
+                <img src="teacher1.jpg" alt="Teacher 1">
+                <h2>Teacher 1</h2>
+            </div>
+            <div class="teacher-card" onclick="showProfile(1)">
+                <img src="teacher2.jpg" alt="Teacher 2">
+                <h2>Teacher 2</h2>
+            </div>
+            <div class="teacher-card" onclick="showProfile(2)">
+                <img src="teacher3.jpg" alt="Teacher 3">
+                <h2>Teacher 3</h2>
+            </div>
+            <div class="teacher-card" onclick="showProfile(3)">
+                <img src="teacher4.jpg" alt="Teacher 4">
+                <h2>Teacher 4</h2>
+            </div>
+            <div class="teacher-card" onclick="showProfile(4)">
+                <img src="teacher5.jpg" alt="Teacher 5">
+                <h2>Teacher 5</h2>
+            </div>
+            <div class="teacher-card" onclick="showProfile(5)">
+                <img src="teacher6.jpg" alt="Teacher 6">
+                <h2>Teacher 6</h2>
+            </div>
+        </div>
+        <div class="teacher-profile">
+            <button class="close-button" onclick="closeProfile()">Close</button>
+            <div class="profile-content">
+                <img src="" alt="" id="profile-image">
+                <h2 id="profile-name"></h2>
+                <p id="profile-info"></p>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

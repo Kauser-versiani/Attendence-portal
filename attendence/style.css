@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background-color: #f8f9fa;
+}
+header nav{
+    width: 100%;
+    background-color: purple;
+    line-height: 30px;
+    height: 30px;
+}
+header nav p{
+    margin-left: 70px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+header nav p span{
+    float: right;
+    margin-right: 80px;
+}
+header nav p span a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+.nav-2{
+    width: 100%;
+    background-color: #ffff;
+    height: 60px;
+    line-height: 60px;
+
+}
+.nav-2 p{
+    margin-left: 70px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.signup-box{
+    width: 400px;
+    height: auto;
+    padding-left: 50px;
+    padding-top: 40px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 5%;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.signup-box h1{
+    padding-right: 50px;
+    margin-bottom: 10%;
+    text-align: center;
+    background-color: white;
+}
+.sign-up{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+}
+form input{
+    width: 300px;
+    padding: 6px;
+    margin-bottom: 10%;
+    background-color: white;
+    font-size: 18px;
+    border: none;
+    border: 2px solid #eef0f2;
+    border-radius: 5px;
+    outline: none;
+}
+form input:focus{
+    border:2px solid #800080;
+}
+button{
+    width: 128px;
+    padding: 9px;
+    background-color: #800080;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 35px;
+    margin-left: 75px;
+    color: #fff;
+    outline: none;
+}
+
+/*LOGIN*/
+.nav-2{
+    width: 100%;
+    background-color: #ffff;
+    height: 60px;
+    line-height: 60px;
+
+}
+.nav-2 p{
+    margin-left: 70px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.login-box{
+    width: 400px;
+    height: auto;
+    padding-left: 50px;
+    padding-top: 40px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 5%;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1)
+}
+.login-box h1{
+    padding-right: 50px;
+    margin-bottom: 10%;
+    text-align: center;
+    background-color: white;
+}
+.slogin{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+}
+form input{
+    width: 300px;
+    padding: 6px;
+    margin-bottom: 10%;
+    background-color: white;
+    font-size: 18px;
+    border: none;
+    border: 2px solid #eef0f2;
+    border-radius: 5px;
+    outline: none;
+}
+form input:focus{
+    border:2px solid #800080;
+}
+button{
+    width: 128px;
+    padding: 9px;
+    background-color: #800080;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 35px;
+    margin-left: 75px;
+    color: #fff;
+    outline: none;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+/* Style the attendance checkbox */
+.attendance-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Style the checkbox when checked */
+.attendance-checkbox:checked {
+    background-color: #4CAF50;
+}
+.attendance-checkbox + label {
+    cursor: pointer;
+}
+
+/* Add hover effect on table rows */
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+/* Reset some default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Basic styling for the page
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+Styling for the form
+form {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+Styling for the student list
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+Media query for smaller screens
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+}
+Styling for the edit and delete buttons
+button {
+    padding: 6px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+button.edit {
+    background-color: #ffc107;
+    color: #333;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button.edit:hover {
+    background-color: #ffca2b;
+}
+
+button.delete:hover {
+    background-color: #d6424d;
+} */
+
+/* Basic styling for the page */
+
+.student-box{
+    width: 900px;
+    height: auto;
+    padding-left: 50px;
+    padding-top: 40px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 5%;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.student{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #eef0f2;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#add-button{
+    width: 15%;
+    background-color: #800080;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.studentbox-2{
+    width: 900px;
+    height: auto;
+    padding-left: 30px;
+    padding-top: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.studentbox-2 p{
+    width: 95%;
+}
+.deleteBtn{
+    background-color: #fff;
+    padding: 1px;
+    color: #800080;
+    margin-left: -20px;
+}
+.editBtn{
+    background-color: #fff;
+    color: #800080;
+    padding: 1px;
+    margin-left: -25px;
+}
+@media(max-width:960px){
+.studentbox-2{
+    width: 750px;
+}
+    .student-box{
+    width: 750px;
+    }
+#add-button{
+    width: 20%;
+}
+}
+@media(max-width:790px){
+    .studentbox-2{
+        width: 500px;
+    }
+    .student-box{
+    width: 500px;
+    }
+#add-button{
+    width: 25%;
+}
+}
+@media(max-width:535px){
+    .studentbox-2{
+        width: 400px;
+    }
+    .student-box{
+    width: 400px;
+    }
+#add-button{
+    width: 35%;
+}
+}
+@media(max-width:445px){
+    .studentbox-2{
+        width: 350px;
+    }
+    .student-box{
+    width: 350px;
+    }
+#add-button{
+    width: 40%;
+}
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for the teacher list */
+.teacher-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.teacher-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.teacher-card:hover {
+    transform: scale(1.05);
+}
+
+.teacher-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling for the teacher profile */
+.teacher-profile {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 999;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .teacher-card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .teacher-card {
+        width: 100%;
+    }
+}
