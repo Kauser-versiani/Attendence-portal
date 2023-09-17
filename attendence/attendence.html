@@ -7,63 +7,63 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Attendance Sheet</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Name</th>
-                    <th>Present</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2023-09-10</td>
-                    <td>John Doe</td>
-                    <td><input type="checkbox" class="attendance-checkbox"></td>
-                </tr>
-                <!-- Add more rows as needed -->
-            </tbody>
-        </table>
-    </div>
+        
 
-    <div class="container">
-        <h1>Teacher Profiles</h1>
-        <div class="teacher-list">
-            <div class="teacher-card" onclick="showProfile(0)">
-                <img src="teacher1.jpg" alt="Teacher 1">
-                <h2>Teacher 1</h2>
+
+   
+
+        <div class="teacher-container">
+            <h1>Teacher Profiles</h1>
+            <div class="teacher-list">
+                <div class="teacher-card" onclick="showProfile(0)">
+                    <img src="./image-1.jpg" alt="Teacher 1">
+                    <h2>Miss Hina</h2>
+                </div>
+                <div class="teacher-card" onclick="showProfile(1)">
+                    <img src="./image-2.jpg" alt="Teacher 2">
+                    <h2>Miss Tayyaba</h2>
+                </div>
+                <div class="teacher-card" onclick="showProfile(2)">
+                    <img src="./image-3.jpg" alt="Teacher 3">
+                    <h2>Miss Qurat</h2>
+                </div>
+                <div class="teacher-card" onclick="showProfile(3)">
+                    <img src="./image-4.jpg" alt="Teacher 4">
+                    <h2>Miss Kausar</h2>
+                </div>
+                <div class="teacher-card" onclick="showProfile(4)">
+                    <img src="./image-5.webp" alt="Teacher 5">
+                    <h2>Miss Muneeba</h2>
+                </div>
+                <div class="teacher-card" onclick="showProfile(5)">
+                    <img src="./image-6.webp" alt="Teacher 6">
+                    <h2>Miss Hafsa</h2>
+                </div>
             </div>
-            <div class="teacher-card" onclick="showProfile(1)">
-                <img src="teacher2.jpg" alt="Teacher 2">
-                <h2>Teacher 2</h2>
-            </div>
-            <div class="teacher-card" onclick="showProfile(2)">
-                <img src="teacher3.jpg" alt="Teacher 3">
-                <h2>Teacher 3</h2>
-            </div>
-            <div class="teacher-card" onclick="showProfile(3)">
-                <img src="teacher4.jpg" alt="Teacher 4">
-                <h2>Teacher 4</h2>
-            </div>
-            <div class="teacher-card" onclick="showProfile(4)">
-                <img src="teacher5.jpg" alt="Teacher 5">
-                <h2>Teacher 5</h2>
-            </div>
-            <div class="teacher-card" onclick="showProfile(5)">
-                <img src="teacher6.jpg" alt="Teacher 6">
-                <h2>Teacher 6</h2>
+            <div class="teacher-profile">
+                <div class="profile-content">
+                    <img src="./download.jpg" alt="" id="profile-image">
+                    <h2 id="profile-name"></h2>
+                    <p id="profile-info"></p>
+                    <div id="batch"></div>
+                </div>
+                <button class="close-button" onclick="closeProfile()">Close profile</button>
+    
             </div>
         </div>
-        <div class="teacher-profile">
-            <button class="close-button" onclick="closeProfile()">Close</button>
-            <div class="profile-content">
-                <img src="" alt="" id="profile-image">
-                <h2 id="profile-name"></h2>
-                <p id="profile-info"></p>
+
+
+        <div class="portion">
+            <h1>Attendance Sheet</h1>          
+                    <div class="headings">
+                        <h3>Name</h3>
+                        <h3>Roll No</h3>
+                    </div>
+                    <div class="details">
+                <div><br><span id="student-name"></span></div>
+                <div><br><span id="RollNo"></span></div>
             </div>
-        </div>
-    </div> 
+            </div>
+    <script type="module" src="./attendence.js"></script>
 </body>
 </html>

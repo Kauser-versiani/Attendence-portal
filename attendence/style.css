@@ -124,12 +124,6 @@ button{
     text-align: center;
     background-color: white;
 }
-.slogin{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: white; 
-}
 form input{
     width: 300px;
     padding: 6px;
@@ -157,7 +151,18 @@ button{
     color: #fff;
     outline: none;
 }
-
+@media(max-width:430px){
+    .login-box,.signup-box{
+        width: 350px;
+        padding-left: 40px;
+    }
+    form input{
+        width: 270px;
+    }
+    button{
+        margin-left: 55px;
+    }
+}
 
 .container {
     max-width: 800px;
@@ -173,8 +178,6 @@ h1 {
     margin-bottom: 20px;
     color: #333;
 }
-
-/* Styling for the table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -190,156 +193,20 @@ th, td {
 thead {
     background-color: #f2f2f2;
 }
-
-/* Style the attendance checkbox */
 .attendance-checkbox {
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
-
-/* Style the checkbox when checked */
 .attendance-checkbox:checked {
     background-color: #4CAF50;
 }
 .attendance-checkbox + label {
     cursor: pointer;
 }
-
-/* Add hover effect on table rows */
 tbody tr:hover {
     background-color: #f5f5f5;
 }
-/* Reset some default styles
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-Basic styling for the page
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-Styling for the form
-form {
-    text-align: center;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-Styling for the student list
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    background-color: #fff;
-}
-
-Media query for smaller screens
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    input[type="text"] {
-        font-size: 14px;
-    }
-
-    button[type="submit"] {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    li {
-        font-size: 14px;
-    }
-}
-Styling for the edit and delete buttons
-button {
-    padding: 6px 12px;
-    margin-left: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-    background-color: #eee;
-}
-
-button.edit {
-    background-color: #ffc107;
-    color: #333;
-}
-
-button.delete {
-    background-color: #dc3545;
-    color: #fff;
-}
-
-button.edit:hover {
-    background-color: #ffca2b;
-}
-
-button.delete:hover {
-    background-color: #d6424d;
-} */
-
-/* Basic styling for the page */
-
 .student-box{
     width: 900px;
     height: auto;
@@ -450,7 +317,10 @@ input{
     width: 40%;
 }
 }
-.container {
+
+
+/*ATTENDENCE SHEET*/
+.portion{
     max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
@@ -458,14 +328,33 @@ input{
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
+.headings{
+    display: flex;
+    justify-content: space-around;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+/*TEACHER PROFILE*/
+.teacher-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+}
+.mark-container{
+    margin-top: 50px;
+}
+.teacher-container h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
+    margin-top: 20px;
 }
-
-/* Styling for the teacher list */
 .teacher-list {
     display: flex;
     justify-content: space-between;
@@ -480,18 +369,27 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .teacher-card:hover {
     transform: scale(1.05);
+    overflow: hidden;
+    border: 2px solid #800080;
 }
-
 .teacher-card img {
     max-width: 100%;
     height: auto;
 }
-
-/* Styling for the teacher profile */
+.teacher-list img{
+    width: 350px !important;
+    height: 200px !important;
+    border: 1px solid #800080;
+}
 .teacher-profile {
     display: none;
     background-color: rgba(255, 255, 255, 0.95);
@@ -507,22 +405,20 @@ h1 {
 }
 
 .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #333;
+    background-color: #800080;
     color: #fff;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 17px;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+    right: 50px;
+    width: 250px;
 }
 
 .profile-content {
     padding: 20px;
 }
-
-/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .teacher-card {
         width: calc(50% - 10px);

@@ -23,7 +23,7 @@ console.log(auth);
             password:password.value,
         })
         alert("successfully signup",resolve)
-        // location.replace("")
+        location.replace("login.html")
         // ...
     })
     .catch((reject) => {
